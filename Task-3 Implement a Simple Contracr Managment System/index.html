@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1> Contact Manager</h1>
+
+        <!-- ✅ Contact Form -->
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Enter Name" required>
+            <input type="text" id="phone" placeholder="Enter Phone Number" required>
+            <input type="email" id="email" placeholder="Enter Email" required>
+            <button type="submit" id="add-btn">Add Contact</button>
+        </form>
+
+        <!-- ✅ Contact List (Dynamically Updated) -->
+        <div class="contact-list">
+            <ul id="contact-list">
+                <!-- Contacts will be dynamically inserted here -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+/* 🔥 Gradient Background */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #015d2a, #e6f602);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+/* 📌 Centered Container */
+.container {
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    transition: 0.3s;
+}
+
+/* ✍️ Form Fields */
+input {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #ff4e50;
+    border-radius: 25px;
+    outline: none;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    font-size: 16px;
+}
+
+/* 🎨 Input Focus Effect */
+input:focus {
+    border-color: #e76800;
+    box-shadow: 0px 0px 8px rgba(252, 145, 58, 0.6);
+}
+
+/* ➕ Add Contact Button */
+button {
+    background: #086b0c;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #fc913a;
+    transform: scale(1.05);
+}
+
+/* 📜 Contact List */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+/* 📝 Contact Item */
+li {
+    background: #f8f8f8;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+li:hover {
+    transform: scale(1.02);
+    background: #fff3e0;
+}
+
+/* 🔹 Contact Details */
+.contact-info {
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+/* ✍️ Labels for Name, Phone, Email */
+.contact-info span {
+    font-weight: normal;
+    color: #555;
+    display: block;
+    margin-top: 3px;
+    font-size: 14px;
+}
+
+/* 🖊️ Button Container */
+.button-container {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+/* 🖊️ Edit & ❌ Delete Buttons */
+li button {
+    background: #086b0c;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    min-width: 100px;
+    justify-content: center;
+    font-weight: bold;
+}
+
+/* 🖊️ Edit Button */
+li button:hover {
+    background: #fc913a;
+    transform: scale(1.05);
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 450px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    li {
+        font-size: 12px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
