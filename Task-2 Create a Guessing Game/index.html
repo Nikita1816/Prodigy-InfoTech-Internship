@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="fade-in">🎯 Guess the Number!</h1>
+        <p class="fade-in">Try to guess the secret number between <strong>1 and 100</strong>.</p>
+        
+        <input type="number" id="userGuess" placeholder="Enter your guess" min="1" max="100">
+        <button onclick="checkGuess()" class="fade-in">Submit Guess</button>
+
+        <div id="feedback" class="feedback-box fade-in" aria-live="polite">Make your first guess!</div>
+        <p id="attempts" class="fade-in">Attempts: <span>0</span></p>
+        
+        <button onclick="restartGame()" class="restart-btn fade-in">Restart Game</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
