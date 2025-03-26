@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+
+h1 {
+    margin-top: 20px;
+    color: #333;
+}
+
+.container {
+    margin: 20px auto;
+    width: 330px;
+    padding: 10px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+table {
+    border-collapse: collapse;
+    margin: 10px auto;
+}
+
+td {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border: 1px solid black;
+    position: relative;
+}
+
+/* 🔵 Add thicker vertical lines every 3rd column */
+td:nth-child(3n) {
+    border-right: 3px solid black;
+}
+
+/* 🔵 Add thicker horizontal lines every 3rd row */
+tr:nth-child(3n) td {
+    border-bottom: 3px solid black;
+}
+
+/* 🟢 Ensure the leftmost and topmost border is also thick */
+td:first-child {
+    border-left: 3px solid black;
+}
+
+tr:first-child td {
+    border-top: 3px solid black;
+}
+
+input {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
